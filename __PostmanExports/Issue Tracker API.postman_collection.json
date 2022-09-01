@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "a86c0961-3cc3-4d91-bfba-57249ebdd887",
+		"name": "Issue Tracker API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "V1",
+			"item": [
+				{
+					"name": "Get Issues",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|6MASPtKomnhx5EJoBRtvSobY4xhF3XVmvGaGW8Ii",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"{{email}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/issues",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"issues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Issue",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|6MASPtKomnhx5EJoBRtvSobY4xhF3XVmvGaGW8Ii",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Excel report got a problem",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Please see below",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "bug",
+									"type": "text"
+								},
+								{
+									"key": "urgency",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "importance",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "page_title",
+									"value": "{{page_title}}",
+									"type": "text"
+								},
+								{
+									"key": "page_url",
+									"value": "{{page_url}}",
+									"type": "text"
+								},
+								{
+									"key": "requester_name",
+									"value": "{{name}}",
+									"type": "text"
+								},
+								{
+									"key": "requester_email",
+									"value": "{{email}}",
+									"type": "text"
+								},
+								{
+									"key": "requester_dept",
+									"value": "{{dept}}",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/issues",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"issues"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
