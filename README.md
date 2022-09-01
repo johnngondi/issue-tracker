@@ -12,9 +12,9 @@ Out of the box it provides two plugins for integration with other software syste
 They will help logged in users submit issues & view the submitted issues status
 right from the app interface i.e. from any page.
 
-**1. JQuery plugin** - This will integrate with JQuery apps. Get it <a href=''>here</a>
+**1. JQuery plugin** - This will integrate with JQuery apps. *Coming Soon...*
 
-**2. VueJS plugin** - This will integrate with VueJS apps. Get it <a href=''>here</a>
+**2. VueJS plugin** - This will integrate with VueJS apps. *Coming Soon...*
 
 ## API Documentation (V1)
 In case you wish to create your own integration, just follow this documentation.
